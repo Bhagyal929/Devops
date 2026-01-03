@@ -1,2 +1,2 @@
 # Devops
-practicw
+practice
