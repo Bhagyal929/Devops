@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("test"){
             when{
-                changeset j4
+                changeset "j4"
             }
             steps{
                 sh ("uname")
@@ -11,6 +11,9 @@ pipeline{
             }
         }
         stage("dev"){
+            when{
+                changeset "j4"
+            }
             steps{
                 sh("free")
                 sh("df -h")
