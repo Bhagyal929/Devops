@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("test"){
             when{
-                changeset tt
+                changeset j4
             }
             steps{
                 sh ("uname")
