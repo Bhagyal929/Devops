@@ -2,6 +2,9 @@ pipeline{
     agent any
     stages{
         stage("test"){
+            when{
+                changeset tt
+            }
             steps{
                 sh ("uname")
                 echo "stage is sucess"
